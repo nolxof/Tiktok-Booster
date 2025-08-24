@@ -73,8 +73,8 @@ def  is_first_run():
 
 def show_credits():
     """Display program credits"""
-    print(f"{INFO}{Fore.BLUE}{ProgramUsage.Translations("credits",0)}{Fore.CYAN}Sneezedip.{Style.RESET_ALL}")
-    print(f"{INFO}{Fore.BLUE}{ProgramUsage.Translations("credits",1)}{Fore.GREEN}"
+    print(f"{INFO}{Fore.BLUE}{ProgramUsage.Translations('credits',0)}{Fore.CYAN}Sneezedip.{Style.RESET_ALL}")
+    print(f"{INFO}{Fore.BLUE}{ProgramUsage.Translations('credits',1)}{Fore.GREEN}"
           f"https://discord.gg/nAa5PyxubF{Style.RESET_ALL}")
 
 
@@ -682,3 +682,4 @@ if __name__ == "__main__":
         TikTokBooster()
     except SessionNotCreatedException:
         print("Session was not created")
+
