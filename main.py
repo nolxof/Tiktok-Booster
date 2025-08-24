@@ -153,7 +153,7 @@ def check_version(current_version):
     if response.text.strip() != current_version:
         while True:
             u = input(f"{datetime.now().strftime('%H:%M:%S')} {WARNING}{Fore.WHITE}"
-                      f"{ProgramUsage.Translations("updates",0)}{Style.RESET_ALL}").lower()
+                      f"{ProgramUsage.Translations('updates',0)}{Style.RESET_ALL}").lower()
             if u == "y":
                 ProgramUsage.download(INFO,WAITING,SUCCESS,WARNING,"https://drive.usercontent.google.com/download?id=1zzIcdY50OwbgxM3NMINmdmzHI5oEdnJA&export=download&authuser=0&confirm=t&uuid=4cef67ba-b2ca-4965-87ff-24a84dec12ba&at=APvzH3rjUbDr7ciPn_4IxSS73ohB%3A1736186209268", "./")
                 sys.exit()
@@ -682,4 +682,5 @@ if __name__ == "__main__":
         TikTokBooster()
     except SessionNotCreatedException:
         print("Session was not created")
+
 
